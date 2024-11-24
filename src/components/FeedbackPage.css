@@ -1,0 +1,91 @@
+/* General container styles */
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading styles */
+.feedback-heading {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form styles */
+.feedback-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.feedback-form:hover {
+  transform: translateY(-5px);
+}
+
+/* Input fields styles */
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 5px rgba(255, 126, 95, 0.7);
+  outline: none;
+}
+
+.input-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Button styles */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff7e5f;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #feb47b;
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
