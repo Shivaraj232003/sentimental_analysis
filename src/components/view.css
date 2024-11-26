@@ -73,4 +73,21 @@
     font-size: 0.9rem;
     color: #c0c0c0;
   }
+  .custom-btn {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .custom-btn.btn-warning {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .custom-btn.btn-warning:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+  }
+  
   

@@ -24,35 +24,46 @@ const ViewPage = () => {
         </p>
       </section>
 
-      {/* Main Content */}
-      <div className="row">
-        {/* Left Part - Download Option */}
-        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center p-4">
-          <h2 className="text-center text-white mb-4">Download iPhone Report</h2>
-          <img src={downloadImage} alt="Download Report" className="img-fluid mb-4 custom-img" />
-          <Button
-            variant="contained"
-            onClick={downloadPDF}
-            className="btn btn-primary custom-btn"
-          >
-            Download PDF
-          </Button>
-        </div>
+      {/* Main Content */}  
+<div className="row">
+  {/* Left Part - Download Option */}
+  <div className="col-md-4 d-flex flex-column align-items-center justify-content-center p-4">
+    <h2 className="text-center text-white mb-4">Download iPhone Report</h2>
+    <img src={downloadImage} alt="Download Report" className="img-fluid mb-4 custom-img" />
+    <Button
+      variant="contained"
+      onClick={downloadPDF}
+      className="btn btn-primary custom-btn"
+    >
+      Download PDF
+    </Button>
+  </div>
 
-        {/* Right Part - View Power BI Report */}
-        <div className="col-md-6 d-flex flex-column align-items-center justify-content-center p-4">
-          <h2 className="text-center text-white mb-4">View Power BI Report</h2>
-          <img src={powerBiImage} alt="Power BI Report" className="img-fluid mb-4 custom-img" />
-          <a
-            href="https://app.powerbi.com/reportEmbed?reportId=592690f0-f181-4cb1-bf1d-e2afd1ab9e2c&autoAuth=true&ctid=989bd926-7d97-4eca-8a90-83492821bed1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-success custom-btn"
-          >
-            View Report
-          </a>
-        </div>
-      </div>
+  {/* Middle Part - Chatbot */}
+  <div className="col-md-4 d-flex flex-column align-items-center justify-content-center p-4">
+    <h2 className="text-center text-white mb-4">Chat with AI</h2>
+    <button
+      className="btn btn-warning custom-btn"
+      onClick={() => alert('Starting Chatbot...')} // Replace this with chatbot logic
+    >
+      Power Assistant.....!
+    </button>
+  </div>
+
+  {/* Right Part - View Power BI Report */}
+  <div className="col-md-4 d-flex flex-column align-items-center justify-content-center p-4">
+    <h2 className="text-center text-white mb-4">View Power BI Report</h2>
+    <img src={powerBiImage} alt="Power BI Report" className="img-fluid mb-4 custom-img" />
+    <a
+      href="https://app.powerbi.com/reportEmbed?reportId=592690f0-f181-4cb1-bf1d-e2afd1ab9e2c&autoAuth=true&ctid=989bd926-7d97-4eca-8a90-83492821bed1"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn btn-success custom-btn"
+    >
+      View Report
+    </a>
+  </div>
+</div>
 
       {/* Highlights Section */}
       <section className="highlights-section text-center py-5">
